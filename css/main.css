@@ -10,7 +10,9 @@
   box-sizing: border-box;
   font-size: calc(0.5em + 1vh);
 }
-
+.show-desktop li a:hover {
+  color: #f74442;
+}
 /* El estilo base para moviles */
 body {
   background-color: #112935;
@@ -190,6 +192,9 @@ p {
   display: flex;
   flex-direction: column;
 }
+.contact-form label {
+  font-weight: bold;
+}
 
 .contact-form input,
 .contact-form textarea {
@@ -225,7 +230,7 @@ p {
   font-weight: 400;
   color: white;
   font-size: 1rem;
-  width: 200px;
+  width: 25vh;
 }
 
 .black-decoration {
@@ -285,7 +290,7 @@ footer .social-links {
 
   .logo {
     width: 150px;
-    margin: 3em 10em;
+    margin: 3em;
   }
 
   .show-desktop {
@@ -303,11 +308,7 @@ footer .social-links {
     width: auto;
     height: auto;
     display: flex;
-    margin: 3em 5em;
-  }
-
-  .show-desktop > li:last-child > a {
-    color: #f74442;
+    margin: 3em;
   }
 
   .social-links {
@@ -369,6 +370,70 @@ footer .social-links {
 
 @media only screen and (min-width: 1024px) {
   /*TODO: FALTA CSS */
+}
+
+@media only screen and (min-width: 414px) {
+  
+  .logo{
+  width: 90px;
+  margin: 2.5em;
+  }
+  
+  .container p {
+    font-size: 10pt;
+  }
+  
+  .social-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .social-links i {
+    position: relative;
+    bottom: 1em;
+  }
+
+  .social-links li a {
+    color: #d7dee6;
+    text-decoration: none;
+    font-size: 100pt;
+    margin: 1.5vh;
+  }
+  
+  .hide-desktop{
+    margin: 0.5em;
+  }
+
+  .bio-info{
+    margin-top: 2.5em;
+  }
+
+  .contact-form input[type="submit"] {
+    background-color: #f74442;
+    font-weight: 400;
+    color: white;
+    font-size: 1rem;
+    width: 85%;
+  }
+
+  footer .social-links {
+    color: #d7dee6;
+    text-decoration: none;
+    font-size: 100pt;
+    height: 15vh;
+  }
+  
+  footer .social-links i {
+    position: relative;
+    bottom: 0.5em;
+  }
+
+
+
 }
 
 @media only screen and (min-width: 1440px) {
