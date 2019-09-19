@@ -316,8 +316,6 @@ footer .social-links {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 0;
-    padding: 0;
   }
 
   .social-links i {
@@ -330,18 +328,6 @@ footer .social-links {
     text-decoration: none;
     font-size: 100pt;
     margin: 1.5vh;
-  }
-
-  footer .social-links {
-    color: #d7dee6;
-    text-decoration: none;
-    font-size: 100pt;
-    height: 110px;
-  }
-
-  footer .social-links i {
-    position: relative;
-    bottom: 0.5em;
   }
 
   .show-desktop > i {
@@ -373,16 +359,15 @@ footer .social-links {
 }
 
 @media only screen and (min-width: 414px) {
-  
-  .logo{
-  width: 90px;
-  margin: 2.5em;
+  .logo {
+    width: 90px;
+    margin: 2.5em;
   }
-  
+
   .container p {
     font-size: 10pt;
   }
-  
+
   .social-links {
     list-style: none;
     display: flex;
@@ -403,13 +388,19 @@ footer .social-links {
     font-size: 100pt;
     margin: 1.5vh;
   }
-  
-  .hide-desktop{
+
+  .hide-desktop {
     margin: 0.5em;
   }
 
-  .bio-info{
+  .bio-info {
     margin-top: 2.5em;
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+
+  .bio-info img {
+    width: 150px;
   }
 
   .contact-form input[type="submit"] {
@@ -426,14 +417,11 @@ footer .social-links {
     font-size: 100pt;
     height: 15vh;
   }
-  
+
   footer .social-links i {
     position: relative;
     bottom: 0.5em;
   }
-
-
-
 }
 
 @media only screen and (min-width: 1440px) {
@@ -442,5 +430,80 @@ footer .social-links {
     width: 80%;
     margin: 0 auto;
     max-width: 1440px;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .logo {
+    width: 300px;
+    margin: 3em;
+  }
+
+  .show-desktop li a {
+    font-size: 20pt;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1920px;
+  }
+  .container h2 {
+    font-size: 20pt;
+  }
+  .container p {
+    font-size: 20pt;
+  }
+  .big-hero img {
+    height: 250px;
+    width: auto;
+  }
+  .post ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .green-area article {
+    height: 400px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .green-area article h3 {
+    font-size: 15pt;
+  }
+  .green-area article p {
+    font-size: 15pt;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0px 2em;
+    font-size: 1em;
+    width: 100%;
+  }
+
+  .contact-form input[type="submit"] {
+    background-color: #f74442;
+    font-weight: 400;
+    color: white;
+    font-size: 1.25rem;
+    width: 30%;
+  }
+
+  footer .social-links {
+    color: #d7dee6;
+    text-decoration: none;
+    font-size: 100pt;
+    height: 15vh;
+  }
+
+  footer .social-links i {
+    position: relative;
+    bottom: 0.25em;
   }
 }
