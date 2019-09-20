@@ -108,7 +108,7 @@ footer .social-links i {
 .social-links li a {
   color: #d7dee6;
   text-decoration: none;
-  font-size: 100pt;
+  font-size: 20vh;
   margin: 2vh;
 }
 
@@ -265,7 +265,7 @@ footer {
   color: #d7dee6;
 }
 
-footer .social-links li{
+footer .social-links li {
   margin: -5em 0em -2.3em;
   padding: 0em 1em;
 }
