@@ -53,7 +53,6 @@ p {
   top: 30%;
   right: 95%;
   font-size: 1.5rem;
-
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -83,16 +82,34 @@ p {
 .social-links {
   list-style: none;
   padding: 0;
-  margin-top: 3em;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
+/*
 .social-links li a {
   color: #d7dee6;
   text-decoration: none;
   font-size: 2.5em;
+}
+*/
+
+.social-links i {
+  position: relative;
+  bottom: 1em;
+}
+
+footer .social-links i {
+  position: relative;
+  bottom: 0;
+}
+
+.social-links li a {
+  color: #d7dee6;
+  text-decoration: none;
+  font-size: 100pt;
+  margin: 2vh;
 }
 
 .green-area {
@@ -103,6 +120,15 @@ p {
   padding: 1em;
   margin-bottom: -2px;
 }
+
+.post ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
 .post h2 {
   text-transform: uppercase;
   font-weight: 700;
@@ -110,14 +136,11 @@ p {
   margin: 1em;
 }
 
-.post ul {
-  list-style: none;
-}
-
 .post ul li {
-  min-height: 300px;
-  max-width: 350px;
-  margin: 2rem auto;
+  min-height: 350px;
+  max-height: 3500px;
+  margin: 1rem 2rem;
+  flex: 1 0 300px;
 }
 
 .post ul li article {
@@ -181,7 +204,7 @@ p {
   flex-direction: column;
   text-align: left;
   padding: 0px 1em;
-  padding-left: 5em;
+  padding-left: 7em;
 }
 
 .contact * + * {
@@ -229,8 +252,8 @@ p {
   background-color: #f74442;
   font-weight: 400;
   color: white;
-  font-size: 1rem;
-  width: 25vh;
+  font-size: 1.25rem;
+  width: 30%;
 }
 
 .black-decoration {
@@ -274,22 +297,8 @@ footer .social-links {
 
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
-  .post ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .post ul li {
-    min-height: 350px;
-    max-height: 3500px;
-    margin: 1rem 2rem;
-    flex: 1 0 300px;
-  }
-
   .logo {
-    width: 150px;
+    width: 90px;
     margin: 3em;
   }
 
@@ -311,30 +320,26 @@ footer .social-links {
     margin: 3em;
   }
 
-  .social-links {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .social-links i {
-    position: relative;
-    bottom: 1em;
-  }
-
-  .social-links li a {
-    color: #d7dee6;
-    text-decoration: none;
-    font-size: 100pt;
-    margin: 1.5vh;
-  }
-
   .show-desktop > i {
     color: #0ac693;
     font-size: 40pt;
     position: relative;
     bottom: 1.75em;
+  }
+
+  .green-area article {
+    height: 310px;
+    width: calc(2em + 55vh);
+    margin: 0;
+    padding: 0;
+  }
+
+  .green-area article h3 {
+    font-size: 10pt;
+  }
+
+  .green-area article p {
+    font-size: 8pt;
   }
 
   .about .container {
@@ -360,33 +365,12 @@ footer .social-links {
 
 @media only screen and (min-width: 414px) {
   .logo {
-    width: 90px;
-    margin: 2.5em;
+    width: 120px;
+    margin: 3.5em;
   }
 
   .container p {
     font-size: 10pt;
-  }
-
-  .social-links {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-  }
-
-  .social-links i {
-    position: relative;
-    bottom: 1em;
-  }
-
-  .social-links li a {
-    color: #d7dee6;
-    text-decoration: none;
-    font-size: 100pt;
-    margin: 1.5vh;
   }
 
   .hide-desktop {
@@ -404,23 +388,12 @@ footer .social-links {
   }
 
   .contact-form input[type="submit"] {
-    background-color: #f74442;
-    font-weight: 400;
-    color: white;
-    font-size: 1rem;
-    width: 85%;
+    width: 38vh;
   }
 
-  footer .social-links {
-    color: #d7dee6;
-    text-decoration: none;
-    font-size: 100pt;
-    height: 15vh;
-  }
-
-  footer .social-links i {
-    position: relative;
-    bottom: 0.5em;
+  .contact {
+    padding: 0px 1em;
+    padding-left: 5em;
   }
 }
 
@@ -457,16 +430,10 @@ footer .social-links {
     height: 250px;
     width: auto;
   }
-  .post ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
 
   .green-area article {
     height: 400px;
-    width: auto;
+    width: calc(2em + 45vh);
     margin: 0;
     padding: 0;
   }
@@ -484,26 +451,16 @@ footer .social-links {
     border: none;
     border-radius: 0px 2em;
     font-size: 1em;
-    width: 100%;
+    width: 70%;
   }
 
-  .contact-form input[type="submit"] {
-    background-color: #f74442;
-    font-weight: 400;
-    color: white;
-    font-size: 1.25rem;
-    width: 30%;
+  .bio-info {
+    margin-left: 10em;
   }
 
-  footer .social-links {
+  footer {
+    background-color: #0d5061;
     color: #d7dee6;
-    text-decoration: none;
-    font-size: 100pt;
-    height: 15vh;
-  }
-
-  footer .social-links i {
-    position: relative;
-    bottom: 0.25em;
+    margin: 0;
   }
 }
